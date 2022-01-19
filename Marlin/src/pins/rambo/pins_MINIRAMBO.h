@@ -41,14 +41,19 @@
 #define Y_MIN_PIN                             11
 #define Y_MAX_PIN                             24
 #define Z_MIN_PIN                             10
-#define Z_MAX_PIN                             23
+#define Z_MAX_PIN                             -1
 
+// BTM
+//
+// Faux Servo for BLTouch
+//
+#define SERVO0_PIN        23  //BTM added line per V1Engineering to allow BLTouch
 //
 // Z Probe (when not Z_MIN_PIN)
 //
-#ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN                     23
-#endif
+//#ifndef Z_MIN_PROBE_PIN
+//  #define Z_MIN_PROBE_PIN                     23
+//#endif
 
 //
 // Steppers
